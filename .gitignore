@@ -1,0 +1,22 @@
+# Service account keys and OAuth secrets — NEVER commit
+*.json
+!definitions.template.json
+!ga4_definitions_manifest.json
+service-account*.json
+*key*.json
+*credentials*.json
+client_secret*.json
+token.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,41 @@
+{
+  "_comment": "MANUAL MODE: copy this file to definitions.json and edit. Each parameter you list here will be registered in GA4 as a Custom Dimension (categorical, e.g. difficulty, level_name) or a Custom Metric (numeric, aggregatable, e.g. score, duration_seconds). 'scope' is EVENT or USER. Metric 'unit' is one of STANDARD, CURRENCY, FEET, MILES, METERS, KILOMETERS, MILLISECONDS, SECONDS, MINUTES, HOURS. Remove this _comment key in your real file (optional).",
+
+  "custom_dimensions": [
+    {
+      "parameter_name": "difficulty",
+      "display_name": "Difficulty",
+      "description": "Board / level difficulty (easy, medium, hard)",
+      "scope": "EVENT"
+    },
+    {
+      "parameter_name": "level_name",
+      "display_name": "Level Name",
+      "description": "Name or id of the level being played",
+      "scope": "EVENT"
+    },
+    {
+      "parameter_name": "game_mode",
+      "display_name": "Game Mode",
+      "description": "Selected game mode",
+      "scope": "EVENT"
+    }
+  ],
+
+  "custom_metrics": [
+    {
+      "parameter_name": "score",
+      "display_name": "Score",
+      "description": "Final score for the session",
+      "unit": "STANDARD",
+      "scope": "EVENT"
+    },
+    {
+      "parameter_name": "duration_seconds",
+      "display_name": "Duration (seconds)",
+      "description": "Time spent on the level in seconds",
+      "unit": "SECONDS",
+      "scope": "EVENT"
+    }
+  ]
+}
